@@ -38,7 +38,9 @@ namespace Gallery.Pages
 			{
 				if (_pin == entPIN.Text)
 				{
-					_attemptsCounter++;
+					// Вырнуть "вывеску" в исходное состояние
+					Resources["growingFont"] = 15;
+					Resources["growingColor"] = Color.FromRgb(10, 10, 10);
 				}
 				else
 				{
